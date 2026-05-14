@@ -17,6 +17,8 @@ const { protect } = require("./middleware/authMiddleware"); // ✅ named import
 
 const app = express();
 
+app.set("trust proxy", 1);
+
 /* ===============================
    BASIC & SECURITY MIDDLEWARE
 ================================ */
